@@ -31,7 +31,7 @@ After=network-online.target
 Wants=network-online.target
 
 [Service]
-ExecStart=/usr/bin/nohup /bin/bash /home/gost/*.sh >/dev/null 2>&1 &
+ExecStart=/bin/bash /home/gost/*.sh
 LimitNOFILE=100000
 Restart=always
 RestartSec=60
